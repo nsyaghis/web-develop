@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, strong{
+    color : black;
+}
+
+p{
+    font-size: 1rem; /* 16 pxl*/
+    line-height: 1.9rem;
+}
+p,
+label,
+input,
+textarea,
+li{
+    color:dimgrey;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container {
+    width : 1200px;
+    margin: 0 auto;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+/* titles */
+
+.member-title {
+    margin:1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.portfolio-title{
+    margin:1rem 0 4rem;
+    font-size: 4rem;
+}
+
+.pre-title {
+    text-transform: uppercase; 
+    letter-spacing: 0.5rem;
+    color :var(grey);
+    position : relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.pre-title::before{   
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: var(grey);
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
+/*layout*/
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+/*logo and navigation menu*/
+.nav{
+    display: flex;
+    justify-content: space-between ;
+    padding: 2rem 0;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.logo a{
+    color: black;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+    color: black;
+}
+
+/*Hero Section*/
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.hero-name {
+    font-size: 5rem;
+    font-weight: 800;
+    margin: 0.5rem 0 1 rem;
+}
+
+.hero-right img{
+    width: 80%;
+
+}
+.hero-right{
+    display: flex;
+    justify-content: center;
+}
+
+/* member section*/
+#member{
+    background-color:whitesmoke;
+    text-align: center;
+    padding: 6rem 0;
+    
+}
+.member .pre-title{
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.member-cover img{
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+}
+
+
+/* portfolio section*/
+#portfolio{
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.portfolio .pre-title{
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.member-cover img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
